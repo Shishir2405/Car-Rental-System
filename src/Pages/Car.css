@@ -1,0 +1,130 @@
+:root {
+    --bg-white: #ffffff;
+    --text-black: #010103;
+    --text-orange: #ff4d30;
+    --text-gray: #6c6c6c;
+    --h3-size: 1.5rem;
+    --p-size: 1rem;
+    --titles-font: 'Arial', sans-serif;
+    --text-font: 'Roboto', sans-serif;
+  }
+  
+  .cars-management {
+    background-color: var(--bg-white);
+    min-height: 100vh;
+    color: var(--text-black);
+    padding: 2rem;
+    padding-top: 10rem;
+  }
+  
+  .cars-management__title {
+    font-size: var(--h3-size);
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    color: var(--text-black);
+  }
+  
+  .cars-management__form {
+    background-color: #f4f4f4;
+    padding: 2rem;
+    border-radius: 0.3rem;
+    margin-bottom: 2rem;
+  }
+  
+  .cars-management__form-title {
+    font-size: var(--h3-size);
+    margin-bottom: 1rem;
+    color: var(--text-black);
+  }
+  
+  .cars-management__form-inputs {
+    display: grid;
+    gap: 1rem;
+  }
+  
+  .cars-management__form-inputs label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: var(--text-gray);
+    font-size: var(--p-size);
+  }
+  
+  .cars-management__form-inputs input {
+    width: 100%;
+    padding: 10px;
+    background-color: #ececec;
+    border: 1px solid transparent;
+    border-radius: 0.3rem;
+    color: var(--text-black);
+    font-family: var(--text-font);
+    font-size: 14px;
+    line-height: 26px;
+    transition: all 0.2s;
+  }
+  
+  .cars-management__form-submit {
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+    background-color: var(--text-orange);
+    padding: 1rem 2rem;
+    border-radius: 0.3rem;
+    box-shadow: 0 10px 15px 0 rgb(255 83 48 / 25%);
+    transition: all 0.3s;
+    border: 2px solid var(--text-orange);
+    font-size: 1rem;
+    width: 100%;
+    cursor: pointer;
+  }
+  
+  .cars-management__form-submit:hover {
+    box-shadow: 0 10px 15px 0 rgb(255 83 48 / 40%);
+    background-color: #fa4226;
+  }
+  
+  .cars-management__list-title {
+    font-size: var(--h3-size);
+    margin-bottom: 1rem;
+    color: var(--text-black);
+  }
+  
+  .cars-management__list-item {
+    background-color: #f4f4f4;
+    border-radius: 0.3rem;
+    padding: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .cars-management__list-item p {
+    margin: 0.5rem 0;
+    color: var(--text-black);
+  }
+  
+  .cars-management__list-item p strong {
+    color: var(--text-gray);
+    margin-right: 0.5rem;
+  }
+  
+  .cars-management__list-empty {
+    color: var(--text-gray);
+    text-align: center;
+    padding: 1rem;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 1100px) {
+    .cars-management__form-inputs input {
+      width: 100%;
+    }
+  }
+  
+  @media (max-width: 650px) {
+    .cars-management {
+      padding: 1rem;
+    }
+  
+    .cars-management__title,
+    .cars-management__list-title {
+      text-align: center;
+    }
+  }
